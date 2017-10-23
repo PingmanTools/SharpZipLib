@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>SharpZipLib.NETStandard</id>
+    <version>1.0.0-alpha2</version>
+    <authors>ICSharpCode</authors>
+    <owners>ICSharpCode</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/PingmanTools/SharpZipLib/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/PingmanTools/SharpZipLib</projectUrl>
+    <description>SharpZipLib (#ziplib, formerly NZipLib) is a compression library for Zip, GZip, BZip2, and Tar written entirely in C# for .NET. It is implemented as an assembly (installable in the GAC), and thus can easily be incorporated into other projects (in any .NET language)</description>
+    <releaseNotes>This is a pre-release version!
+
+Please see https://github.com/icsharpcode/SharpZipLib/wiki/Release-1.0 for more information.</releaseNotes>
+    <copyright>Copyright © 2000-2017 SharpZipLib Contributors</copyright>
+    <tags>Compression Library Zip GZip BZip2 LZW Tar</tags>
+    <repository url="https://github.com/icsharpcode/SharpZipLib" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="bin\Release\net45\*.*" target="lib\net45" />
+    <file src="bin\Release\netstandard1.3\*.*" target="lib\netstandard1.3" />
+  </files>
+
+</package>
